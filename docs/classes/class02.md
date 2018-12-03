@@ -209,9 +209,6 @@ odd_list = list(filter(lambda x: x % 2 != 0, l))
 
 ### Defining classes
 
-
-|||
-
 ```python
 
 class MyClass:
