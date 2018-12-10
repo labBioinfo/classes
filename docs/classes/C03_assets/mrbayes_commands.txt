@@ -1,0 +1,8 @@
+begin mrbayes;
+
+outgroup Podarcis;
+set autoclose=yes;	
+mcmcp ngen=150000 printfreq=1000 samplefreq=100 diagnfreq=1000 nchains=4 savebrlens=yes filename=palrun01;
+mcmc;
+sumt filename=palrun01 conformat=simple contype=halfcompat;
+end;
